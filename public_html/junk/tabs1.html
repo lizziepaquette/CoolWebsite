@@ -1,0 +1,87 @@
+<style>
+body {font-family: "Lato", sans-serif;}
+
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+</style>
+
+<h1>Lizzie Packet</h1>
+
+<ul class="tab">
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'tab0')" id="defaultOpen">Welcome</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'tab1')">Aye we got tabs</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'tab2')">click click</a></li>
+ <li><a href="/aboutme.php" class="tablinks" onclick="openTab(event, 'tab3')">about me</a></li>
+
+</ul>
+
+<script>
+function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+<div id="tab1" class="tabcontent">
+  <h3>This was a real milestone for the website.</h3>
+  <p>Nice nice.</p>
+</div>
+
+<div id="tab2" class="tabcontent">
+  <h3>what you wanna click?</h3>
+  <p>This?</p>
+</div>
+
+
+
