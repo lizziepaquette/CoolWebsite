@@ -11,9 +11,12 @@
 <meta property="og:site_name" content="Lizzie Paquette" />
 <meta property="og:type" content="website"/>
 <meta property="og:description" content="New tab!" />
+
+<script src="jquery.js"></script>
+<script src="includeMenu.js"></script>
 </head>
 <body style = "margin-top: 60px";>
-  <?php include_once("menu.html"); ?>
+<div id = "menu"></div>
 
 
   <h3>This was a real milestone for the website.</h3>
