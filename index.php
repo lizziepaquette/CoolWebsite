@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hire Me</title>
+<link rel="image_src" href="images/domain.gif" />
+<link rel="shortcut icon" href="images/selfportrait.gif" />
+<meta property="og:title" content="Homepage" />
+<meta property="og:image" content="images/domain.gif" />
+<meta property="og:site_name" content="Lizzie Paquette" />
+<meta property="og:type" content="website"/>
+<meta property="og:description" content="awesome stuff" />
+</head>
+
+
+<body style = "margin-top: 60px";>
+
+<img src="images/construction.gif" alt="So much construction here!" style="width:30%">
+
+
+<h3> Currently renovating for employers</h3>
+
+<object data="images/resume.pdf"></object>
+
+<h3> To get to the original website click <a href=" \the-old-one.php">here</a> </h3>
+
+</body>
+</html>
