@@ -1,5 +1,5 @@
 
 
 $(function(){
-      $("#menu").load("/CoolWebsite/menu.html");
+      $("#menu").load("/menu.html");
     });
